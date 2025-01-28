@@ -1,0 +1,12 @@
+D:\UAndI\HelloWorld\Project\bin\Release\net6.0\any\HelloWorld.deps.json
+D:\UAndI\HelloWorld\Project\bin\Release\net6.0\any\HelloWorld.dll
+D:\UAndI\HelloWorld\Project\bin\Release\net6.0\any\HelloWorld.pdb
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.csproj.AssemblyReference.cache
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.AssemblyInfoInputs.cache
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.AssemblyInfo.cs
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.csproj.CoreCompileInputs.cache
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.dll
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\refint\HelloWorld.dll
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\HelloWorld.pdb
+D:\UAndI\HelloWorld\Project\obj\Release\net6.0\any\ref\HelloWorld.dll
