@@ -1,0 +1,13 @@
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\any\HelloSample.deps.json
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\any\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\any\HelloSample.pdb
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.csproj.AssemblyReference.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.GeneratedMSBuildEditorConfig.editorconfig
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.AssemblyInfoInputs.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.AssemblyInfo.cs
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.csproj.CoreCompileInputs.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.sourcelink.json
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\refint\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\HelloSample.pdb
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\any\ref\HelloSample.dll

@@ -1,0 +1,13 @@
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\linux-x64\HelloSample.deps.json
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\linux-x64\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\bin\Release\net7.0\linux-x64\HelloSample.pdb
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.csproj.AssemblyReference.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.GeneratedMSBuildEditorConfig.editorconfig
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.AssemblyInfoInputs.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.AssemblyInfo.cs
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.csproj.CoreCompileInputs.cache
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.sourcelink.json
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\refint\HelloSample.dll
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\HelloSample.pdb
+D:\UAndI\Assets\Samples\Cloud Code\2.9.0\Cloud Code Modules Deployment\SampleContent\Module~\Project\obj\Release\net7.0\linux-x64\ref\HelloSample.dll

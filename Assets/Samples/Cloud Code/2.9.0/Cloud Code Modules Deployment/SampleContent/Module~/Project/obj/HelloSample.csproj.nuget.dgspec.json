@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\UAndI\\Assets\\Samples\\Cloud Code\\2.9.0\\Cloud Code Modules Deployment\\SampleContent\\Module~\\Project\\HelloSample.csproj": {}
+  },
+  "projects": {
+    "D:\\UAndI\\Assets\\Samples\\Cloud Code\\2.9.0\\Cloud Code Modules Deployment\\SampleContent\\Module~\\Project\\HelloSample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\UAndI\\Assets\\Samples\\Cloud Code\\2.9.0\\Cloud Code Modules Deployment\\SampleContent\\Module~\\Project\\HelloSample.csproj",
+        "projectName": "HelloSample",
+        "projectPath": "D:\\UAndI\\Assets\\Samples\\Cloud Code\\2.9.0\\Cloud Code Modules Deployment\\SampleContent\\Module~\\Project\\HelloSample.csproj",
+        "packagesPath": "C:\\Users\\Fahim\\.nuget\\packages\\",
+        "outputPath": "D:\\UAndI\\Assets\\Samples\\Cloud Code\\2.9.0\\Cloud Code Modules Deployment\\SampleContent\\Module~\\Project\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fahim\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Com.Unity.Services.CloudCode.Apis": {
+              "target": "Package",
+              "version": "[1.0.2-alpha, )"
+            },
+            "Com.Unity.Services.CloudCode.Core": {
+              "target": "Package",
+              "version": "[0.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.308\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "linux-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

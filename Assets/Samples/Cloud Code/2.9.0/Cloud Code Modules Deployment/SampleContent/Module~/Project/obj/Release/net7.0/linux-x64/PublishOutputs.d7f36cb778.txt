@@ -1,0 +1,13 @@
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\HelloSample.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\HelloSample.deps.json
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\HelloSample.pdb
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Unity.Services.CloudCode.Apis.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Unity.Services.CloudCode.Core.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Google.Protobuf.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Grpc.Core.Api.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Grpc.Net.Client.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Grpc.Net.Common.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\JsonSubTypes.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Fahim\AppData\Local\Temp\HelloSample\module-compilation\Newtonsoft.Json.dll

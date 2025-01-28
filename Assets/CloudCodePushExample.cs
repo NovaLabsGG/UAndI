@@ -36,35 +36,44 @@ namespace CloudCode
     	async void Start()
         {
             await UnityServices.InitializeAsync();
+            
             SetupEvents();
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
-            Debug.Log(AuthenticationService.Instance.PlayerId);
             await SubscribeToPlayerMessages();
         }
+
         // This method creates a subscription to player messages and logs out the messages received,
         // the state changes of the connection, when the player is kicked and when an error occurs.
         Task SubscribeToPlayerMessages()
         {
             // Register callbacks, which are triggered when a player message is received
             var callbacks = new SubscriptionEventCallbacks();
-            callbacks.MessageReceived += @event =>
-            {
-                Debug.Log(DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss.fffK"));
-                Debug.Log($"Got player subscription Message: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
-            };
-            callbacks.ConnectionStateChanged += @event =>
-            {
-                Debug.Log($"Got player subscription ConnectionStateChanged: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
-            };
-            callbacks.Kicked += () =>
-            {
-                Debug.Log($"Got player subscription Kicked");
-            };
-            callbacks.Error += @event =>
-            {
-                Debug.Log($"Got player subscription Error: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
-            };
+            callbacks.MessageReceived += OnCallbacksOnMessageReceived;
+            callbacks.ConnectionStateChanged += OnCallbacksOnConnectionStateChanged;
+            callbacks.Kicked += OnCallbacksOnKicked;
+            callbacks.Error += OnCallbacksOnError;
             return CloudCodeService.Instance.SubscribeToPlayerMessagesAsync(callbacks);
         }
-	}
+
+        private void OnCallbacksOnError(string @event)
+        {
+            Debug.Log($"Got player subscription Error: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
+        }
+
+        private void OnCallbacksOnKicked()
+        {
+            Debug.Log($"Got player subscription Kicked");
+        }
+
+        private void OnCallbacksOnConnectionStateChanged(EventConnectionState @event)
+        {
+            Debug.Log($"Got player subscription ConnectionStateChanged: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
+        }
+
+        private void OnCallbacksOnMessageReceived(IMessageReceivedEvent @event)
+        {
+            Debug.Log(DateTime.Now.ToString("yyyy-MM-dd'T'HH:mm:ss.fffK"));
+            Debug.Log($"Got player subscription Message: {JsonConvert.SerializeObject(@event, Formatting.Indented)}");
+        }
+    }
 }
