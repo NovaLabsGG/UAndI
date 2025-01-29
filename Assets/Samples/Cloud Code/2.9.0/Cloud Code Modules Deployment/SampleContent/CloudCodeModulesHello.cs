@@ -65,6 +65,7 @@ class CloudCodeModulesHello : MonoBehaviour
         if (!AuthenticationService.Instance.IsSignedIn)
         {
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
+            Debug.Log(AuthenticationService.Instance.PlayerId);
         }
     }
 
