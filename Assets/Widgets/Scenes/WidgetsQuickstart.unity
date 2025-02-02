@@ -3339,7 +3339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330aeb3af00647cd9efbabbfd854a185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCount: 2
+  playerSessionScriptable: {fileID: 11400000, guid: 7004bf5ef9a0e3844b6901892bfe5958, type: 2}
 --- !u!1 &1397510522
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,19 +5633,7 @@ MonoBehaviour:
   WidgetConfiguration: {fileID: 11400000, guid: b6782ee10819f6e4996b80246ae53b75, type: 2}
   JoiningSession:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1354893826}
-        m_TargetAssemblyTypeName: OnNJoinTrigger, Assembly-CSharp
-        m_MethodName: JoiningSession
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   JoinedSession:
     m_PersistentCalls:
       m_Calls:

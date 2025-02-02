@@ -1,0 +1,19 @@
+{
+    "name": "Lobby.Runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:7c9e9b6ae3b5445889307047e3413496",
+        "GUID:267127bfe22c4a3691b85ec6e448157a",
+        "GUID:dad37153ca2d468988c2c36d5a8390fb",
+        "GUID:37e17ffe38d86ae48bc3207e83ffef88"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
