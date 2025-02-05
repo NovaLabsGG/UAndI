@@ -9,6 +9,7 @@ namespace _Root.Scripts.Questions.Runtime.View
         [SerializeField] private int index;
         [SerializeField] private TMP_Text tmpText;
         [SerializeField] private Button button;
+        private QuestionView _questionView;
 
         private void Reset()
         {
@@ -16,7 +17,11 @@ namespace _Root.Scripts.Questions.Runtime.View
             button = GetComponentInChildren<Button>();
         }
 
-        public void SetIndex(int index) => this.index = index;
+        public void Init(QuestionView questionView, int index)
+        {
+            _questionView = questionView;
+            this.index = index;
+        }
 
         public void SetComponentData(string option)
         {
@@ -25,7 +30,7 @@ namespace _Root.Scripts.Questions.Runtime.View
             button.onClick.AddListener(NotifyClick);
         }
 
-        private void NotifyClick() => QuestionView.OnClicked(index);
+        private void NotifyClick() => _questionView.OnClicked(index);
 
         private void OnDisable()
         {

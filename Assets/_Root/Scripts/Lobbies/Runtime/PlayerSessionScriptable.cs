@@ -2,19 +2,22 @@
 using Unity.Services.Multiplayer;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace _Root.Scripts.Lobbies.Runtime
 {
     [CreateAssetMenu(fileName = "PlayerSession", menuName = "Scriptable/Multiplayer/PlayerSession", order = 0)]
     public class PlayerSessionScriptable : ScriptableObject
     {
-        public ISession currentSession;
+        public ISession CurrentSession;
+        
         [SerializeField] private List<string> joinedPlayerIds;
-        public UnityEvent<List<string>> onPlayerJoined;
+        [SerializeField] private UnityEvent<List<string>> onPlayerJoined;
+        [SerializeField] private string nextSceneOnPlayerJoined="question";
 
         public void OnJoinedSession(ISession session)
         {
-            currentSession = session;
+            CurrentSession = session;
             session.PlayerJoined -= SessionOnPlayerJoined;
             session.PlayerJoined += SessionOnPlayerJoined;
         }
@@ -23,11 +26,12 @@ namespace _Root.Scripts.Lobbies.Runtime
         {
             joinedPlayerIds.Add(id);
             onPlayerJoined.Invoke(joinedPlayerIds);
+            SceneManager.LoadScene(nextSceneOnPlayerJoined);
         }
 
         public void Reset()
         {
-            if (currentSession != null) currentSession.PlayerJoined -= SessionOnPlayerJoined;
+            if (CurrentSession != null) CurrentSession.PlayerJoined -= SessionOnPlayerJoined;
         }
     }
 }

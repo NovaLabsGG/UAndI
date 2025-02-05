@@ -4,6 +4,7 @@ using _Root.Scripts.Lobbies.Runtime;
 using _Root.Scripts.Questions.Runtime.View;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityProgressBar;
 
 namespace _Root.Scripts.Questions.Runtime
 {
@@ -13,7 +14,6 @@ namespace _Root.Scripts.Questions.Runtime
 
         public int seed = 10;
         [SerializeField] private int count = 5;
-        public int atQuestion = 0;
         [SerializeField] private PlayerSessionScriptable playerSessionScriptable;
         [SerializeField] private Question[] questions;
         [SerializeField] private QuestionView questionView;
@@ -30,7 +30,7 @@ namespace _Root.Scripts.Questions.Runtime
                 case UnityWebRequest.Result.Success:
                     Debug.Log(www.downloadHandler.text);
                     questions = JsonHelper.FromJson<Question>(www.downloadHandler.text);
-                    questionView.Set(questions[0].text, questions[0].options);
+                    questionView.Set(questions);
                     break;
                 case UnityWebRequest.Result.ConnectionError:
                     break;
