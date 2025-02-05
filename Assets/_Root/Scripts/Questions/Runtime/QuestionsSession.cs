@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using _Root.Scripts.Lobbies.Runtime;
+using _Root.Scripts.Questions.Runtime.View;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -11,9 +12,11 @@ namespace _Root.Scripts.Questions.Runtime
         public string url = "http://localhost:8000/questions?seed={0}&num={1}";
 
         public int seed = 10;
-        public int count = 5;
-        public PlayerSessionScriptable playerSessionScriptable;
-        public Question[] questions;
+        [SerializeField] private int count = 5;
+        public int atQuestion = 0;
+        [SerializeField] private PlayerSessionScriptable playerSessionScriptable;
+        [SerializeField] private Question[] questions;
+        [SerializeField] private QuestionView questionView;
 
         IEnumerator Start()
         {
@@ -27,6 +30,7 @@ namespace _Root.Scripts.Questions.Runtime
                 case UnityWebRequest.Result.Success:
                     Debug.Log(www.downloadHandler.text);
                     questions = JsonHelper.FromJson<Question>(www.downloadHandler.text);
+                    questionView.Set(questions[0].text, questions[0].options);
                     break;
                 case UnityWebRequest.Result.ConnectionError:
                     break;
@@ -38,5 +42,7 @@ namespace _Root.Scripts.Questions.Runtime
                     throw new ArgumentOutOfRangeException();
             }
         }
+        
+        
     }
 }
