@@ -8,13 +8,13 @@ namespace _Root.Scripts.Lobbies.Runtime
     [CreateAssetMenu(fileName = "PlayerSession", menuName = "Scriptable/Multiplayer/PlayerSession", order = 0)]
     public class PlayerSessionScriptable : ScriptableObject
     {
-        private ISession _session;
+        public ISession currentSession;
         [SerializeField] private List<string> joinedPlayerIds;
         public UnityEvent<List<string>> onPlayerJoined;
 
         public void OnJoinedSession(ISession session)
         {
-            _session = session;
+            currentSession = session;
             session.PlayerJoined -= SessionOnPlayerJoined;
             session.PlayerJoined += SessionOnPlayerJoined;
         }
@@ -27,7 +27,7 @@ namespace _Root.Scripts.Lobbies.Runtime
 
         public void Reset()
         {
-            if (_session != null) _session.PlayerJoined -= SessionOnPlayerJoined;
+            if (currentSession != null) currentSession.PlayerJoined -= SessionOnPlayerJoined;
         }
     }
 }
