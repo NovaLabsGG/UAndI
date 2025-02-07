@@ -1,0 +1,13 @@
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Cloud.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Cloud.deps.json
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Cloud.pdb
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Unity.Services.CloudCode.Apis.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Unity.Services.CloudCode.Core.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Google.Protobuf.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Grpc.Core.Api.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Grpc.Net.Client.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Grpc.Net.Common.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\JsonSubTypes.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Fahim\AppData\Local\Temp\Cloud\module-compilation\Newtonsoft.Json.dll

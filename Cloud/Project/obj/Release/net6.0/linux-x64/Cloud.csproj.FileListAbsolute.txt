@@ -1,0 +1,13 @@
+D:\UAndI\Cloud\Project\bin\Release\net6.0\linux-x64\Cloud.deps.json
+D:\UAndI\Cloud\Project\bin\Release\net6.0\linux-x64\Cloud.dll
+D:\UAndI\Cloud\Project\bin\Release\net6.0\linux-x64\Cloud.pdb
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.csproj.AssemblyReference.cache
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.GeneratedMSBuildEditorConfig.editorconfig
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.AssemblyInfoInputs.cache
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.AssemblyInfo.cs
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.csproj.CoreCompileInputs.cache
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.sourcelink.json
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.dll
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\refint\Cloud.dll
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\Cloud.pdb
+D:\UAndI\Cloud\Project\obj\Release\net6.0\linux-x64\ref\Cloud.dll

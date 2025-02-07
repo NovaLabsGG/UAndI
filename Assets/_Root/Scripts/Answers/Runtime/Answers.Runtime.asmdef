@@ -1,4 +1,4 @@
 ﻿{
   "name": "Answers.Runtime",
-  "references":[ "GUID:67da5153dcde4793980744eff46df649" ]
+  "references":[ "GUID:67da5153dcde4793980744eff46df649", "GUID:486082b6c05f44fea0f50d7c04917ad4", "GUID:cd4c367f5c304f868974b3d382cb3518" ]
 }

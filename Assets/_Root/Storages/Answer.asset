@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f04c82f4b874507b7bf521ae16b20a5, type: 3}
   m_Name: Answer
   m_EditorClassIdentifier: 
-  selfAnswer: 
-  otherAnswer: 
+  playerSessionScriptableObject: {fileID: 11400000, guid: 7004bf5ef9a0e3844b6901892bfe5958, type: 2}
+  pushMessageScriptableObject: {fileID: 11400000, guid: c53af9e899d13f144b6ce89c333a0b3c, type: 2}
+  selfAnswers: 00000000
+  otherAnswers: 

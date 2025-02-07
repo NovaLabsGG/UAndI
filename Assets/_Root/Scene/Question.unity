@@ -152,7 +152,7 @@ RectTransform:
   m_Father: {fileID: 310174805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.06, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -265,7 +265,9 @@ MonoBehaviour:
   index: 0
   nextSceneOnAllQuestionAnswered: answer
   selfProgressBar: {fileID: 1132521028}
+  otherProgressBar: {fileID: 820781317}
   extra: 0.2
+  messageChanel: {fileID: 11400000, guid: 35db8c62ad7c36d4791fd3ced304c0b5, type: 2}
   onOptionSelection:
     m_PersistentCalls:
       m_Calls:
@@ -661,7 +663,7 @@ RectTransform:
   m_Father: {fileID: 1263213840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.06, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -755,7 +757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minValue: 0
   maxValue: 1
-  value: 0.5
+  value: 0.06
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1030,7 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minValue: 0
   maxValue: 1
-  value: 0.5
+  value: 0.06
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []

@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using _Root.Scripts.PushMessage.Runtime;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -18,7 +20,10 @@ namespace _Root.Scripts.Questions.Runtime.View
         [SerializeField] private int index;
         [SerializeField] private string nextSceneOnAllQuestionAnswered = "answer";
         [SerializeField] private ProgressBar selfProgressBar;
+        [SerializeField] private ProgressBar otherProgressBar;
         [SerializeField] private float extra = .3f;
+
+        public MessageChanel messageChanel;
 
         private Question[] _questions;
         [SerializeField] private UnityEvent<int> onOptionSelection;
@@ -31,10 +36,19 @@ namespace _Root.Scripts.Questions.Runtime.View
             selfProgressBar.Value = extra / questions.Length;
             answer = new int[questions.Length];
             ShowQuestion(questions[0]);
+            messageChanel.onMessage.AddListener(OnMessageFromOther);
+        }
+
+        private void OnMessageFromOther(string arg0)
+        {
+            int otherIndex = int.Parse(arg0);
+            Debug.Log(arg0);
+            otherProgressBar.Value = (otherIndex + extra) / _questions.Length;
         }
 
         private void ShowQuestion(Question question)
         {
+            text.text = question.text;
             PopulatePool(optionsPrefab, question.options.Length);
             for (var i = 0; i < question.options.Length; i++)
             {

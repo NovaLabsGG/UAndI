@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae711a160d3b66489cad0274c3daeec, type: 3}
-  m_Name: PushTest
+  m_Script: {fileID: 11500000, guid: 21860c6efa504913893efab1b1e66046, type: 3}
+  m_Name: progress.other.messageType
   m_EditorClassIdentifier: 
-  playerId: 1W5IhmyMpu2IgvUZ85ZQn0O6OWRV
+  type: Progress
+  message: 

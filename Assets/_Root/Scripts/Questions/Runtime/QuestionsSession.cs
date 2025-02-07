@@ -4,6 +4,7 @@ using _Root.Scripts.Lobbies.Runtime;
 using _Root.Scripts.Questions.Runtime.View;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Serialization;
 using UnityProgressBar;
 
 namespace _Root.Scripts.Questions.Runtime
@@ -14,7 +15,7 @@ namespace _Root.Scripts.Questions.Runtime
 
         public int seed = 10;
         [SerializeField] private int count = 5;
-        [SerializeField] private PlayerSessionScriptable playerSessionScriptable;
+        [FormerlySerializedAs("playerSessionScriptable")] [SerializeField] private PlayerSessionScriptableObject playerSessionScriptableObject;
         [SerializeField] private Question[] questions;
         [SerializeField] private QuestionView questionView;
 

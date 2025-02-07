@@ -1,12 +1,16 @@
 ﻿using _Root.Scripts.Lobbies.Runtime;
+using _Root.Scripts.PushMessage.Runtime;
+using _Root.Scripts.ScriptableBases.Runtime;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace _Root.Scripts.Answers.Runtime
 {
     [CreateAssetMenu(fileName = "Answer", menuName = "Scriptable/Answer")]
-    public class Answer : ScriptableObject
+    public class Answer : ResetScriptableObject
     {
-        [SerializeField] private PlayerSessionScriptable playerSessionScriptable;
+        [FormerlySerializedAs("playerSessionScriptable")] [SerializeField] private PlayerSessionScriptableObject playerSessionScriptableObject;
+        [FormerlySerializedAs("pushMessageScriptable")] [SerializeField] private PushMessageScriptableObject pushMessageScriptableObject;
         [SerializeField] private int[] selfAnswers;
         [SerializeField] private int[] otherAnswers;
 
@@ -18,9 +22,12 @@ namespace _Root.Scripts.Answers.Runtime
 
         public void SetSelfAnswer(int index)
         {
-            Debug.Log("Send Data");
+            foreach (var joinedPlayerId in playerSessionScriptableObject.joinedPlayerIds)
+            {
+                pushMessageScriptableObject.SendPlayerPushMessage(joinedPlayerId, "Progress", index.ToString());
+            }
         }
-        
+
         public void SetOtherAnswer(int index)
         {
             Debug.Log("Send Data");
@@ -30,13 +37,13 @@ namespace _Root.Scripts.Answers.Runtime
         {
             selfAnswers = answer;
         }
-        
+
         public void SubmitOtherAnswer(int[] answer)
         {
             otherAnswers = answer;
         }
 
-        private void Reset()
+        public override void Reset()
         {
             selfAnswers = null;
             otherAnswers = null;
