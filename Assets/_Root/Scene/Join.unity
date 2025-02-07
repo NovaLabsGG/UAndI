@@ -4969,9 +4969,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: c53af9e899d13f144b6ce89c333a0b3c, type: 2}
-        m_TargetAssemblyTypeName: _Root.Scripts.PushMessage.Runtime.PushMessageScriptable,
+        m_TargetAssemblyTypeName: _Root.Scripts.PushMessage.Runtime.PushMessageScriptableObject,
           PushMessage.Runtime
-        m_MethodName: SubscribeToPlayerMessagesAsync
+        m_MethodName: SubscribeToPlayerMessages
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

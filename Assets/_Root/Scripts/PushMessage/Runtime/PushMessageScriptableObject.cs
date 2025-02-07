@@ -36,7 +36,7 @@ namespace _Root.Scripts.PushMessage.Runtime
                     function,
                     arguments
                 );
-                Debug.Log(sendPlayerMessageResult);
+                Debug.Log($"{otherPlayerId} has received the message: {sendPlayerMessageResult}");
             }
             catch (Exception e)
             {
@@ -44,7 +44,12 @@ namespace _Root.Scripts.PushMessage.Runtime
             }
         }
 
-        public async Task SubscribeToPlayerMessagesAsync()
+        public void SubscribeToPlayerMessages()
+        {
+            _ = SubscribeToPlayerMessagesAsync();
+        }
+
+        private async Task SubscribeToPlayerMessagesAsync()
         {
             var callbacks = new SubscriptionEventCallbacks();
             callbacks.MessageReceived += OnCallbacksOnMessageReceived;

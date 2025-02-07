@@ -17,11 +17,6 @@ namespace _Root.Scripts.Lobbies.Runtime
         public void OnJoinedSession(ISession session)
         {
             CurrentSession = session;
-            if (!session.IsHost)
-            {
-                SessionOnPlayerJoined(session.Host);
-                return;
-            }
             session.PlayerJoined -= SessionOnPlayerJoined;
             session.PlayerJoined += SessionOnPlayerJoined;
         }
